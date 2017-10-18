@@ -3,11 +3,14 @@
 import React from 'react'
 
 const Title = React.createClass({
-  render() {
+  render () {
     return (
-      <div>Oi</div>
-    );
+      <div>
+        <div>Hello</div>
+        <div>Lorem Ipsum</div>
+      </div>
+    )
   }
-});
+})
 
-export default Title;
+export default Title
