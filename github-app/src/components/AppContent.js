@@ -6,9 +6,9 @@ import Actions from './Actions';
 import ReposList from './ReposList';
 
 
-const AppContent = ({ userinfo, repos }) => (
+const AppContent = ({ userinfo, repos, handleSearch }) => (
     <div>
-        <Header />
+        <Header handleSearch={handleSearch} />
         <div className="container">
             <div className="jumbotron home-inner">
 

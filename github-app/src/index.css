@@ -37,9 +37,22 @@ body {
   font-size: 20px;
 }
 
+.home-inner .user-info .meta .user-info--name a{
+  color:#000;
+}
+
 .home-inner .user-info .meta .user-info-company{
   font-weight: bold;
   font-size: 16px;
+}
+
+.meta .user-info--login{
+  background: #5bc0de;
+  float: right;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .home-inner .user-info .meta ul {padding-left:0px;margin-left: 0px;}
@@ -64,4 +77,10 @@ body {
 
 .repos-list li{
   list-style: none;
+}
+
+.repos-list li a{
+  font-size: 14px;
+  color:#f0ad4e;
+  font-weight: bold;
 }
