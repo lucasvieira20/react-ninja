@@ -4,6 +4,7 @@ import AppContent from '../components/AppContent';
 
 
 class App extends Component{
+
     constructor(){
         super()
         this.state = {
@@ -11,7 +12,6 @@ class App extends Component{
             repos: []
         }
     }
-
 
     handleSearch(e) {
 
@@ -34,18 +34,32 @@ class App extends Component{
                         following:result.following
                     }
                 });
-                console.log(result);
             });
+        }
+    }
+
+    getRepos(e) {
+        return (e) => {
+            ajax().get(`https://api.github.com/users/lucasvieira20/repos`)
+                .then((result) => {
+                    this.setState({
+                       repos:[{
+                           name: result[0].name,
+                           link: result[0].html_url
+                       }] 
+                    });
+                });
         }
     }
 
     render(){
         return(
             <div>
-                <AppContent 
+                <AppContent
                     userinfo={this.state.userinfo}
                     repos={this.state.repos}
                     handleSearch={(e) => this.handleSearch(e)}
+                    getRepos={this.getRepos()}
                 />
             </div>
         )

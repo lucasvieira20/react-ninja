@@ -6,14 +6,14 @@ import Actions from './Actions';
 import ReposList from './ReposList';
 
 
-const AppContent = ({ userinfo, repos, handleSearch }) => (
+const AppContent = ({ userinfo, repos, handleSearch, getRepos }) => (
     <div>
         <Header handleSearch={handleSearch} />
         <div className="container">
             <div className="jumbotron home-inner">
 
                 {!!userinfo && <UserInfo userinfo={userinfo} />}
-                {!!userinfo && <Actions />}
+                {!!userinfo && <Actions getRepos={getRepos} />}
 
                 <hr className="my-4" /> 
 
