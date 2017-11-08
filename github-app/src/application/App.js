@@ -23,14 +23,16 @@ class App extends Component{
             ajax().get(`https://api.github.com/users/${value}`)
             .then((result) => {
                 this.setState({
-                    infoName: result.name,
-                    infoCompany: result.company,
-                    infoLocation: result.location,
-                    infoLogin: result.login,
-                    repos:result.public_repos,
-                    imageAvatar:result.avatar_url,
-                    followers: result.followers,
-                    following:result.following
+                    userinfo:{
+                        infoName: result.name,
+                        infoCompany: result.company,
+                        infoLocation: result.location,
+                        infoLogin: result.login,
+                        repos:result.public_repos,
+                        imageAvatar:result.avatar_url,
+                        followers: result.followers,
+                        following:result.following
+                    }
                 });
                 console.log(result);
             });
