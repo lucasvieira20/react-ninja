@@ -14,9 +14,12 @@ class App extends Component{
 
   render () {
     return(
-      {this.state.showTimer && <Timer />}
-
-      <button>Show / Hide Timer </button>
+      <div>
+        {this.state.showTimer && <Timer />}
+        <button onClick={() => {
+          this.setState({ showTimer: !this.state.showTimer })
+          }}>Show / Hide Timer </button>
+      </div>
     )
   }
 }

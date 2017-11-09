@@ -9,6 +9,8 @@ class Timer extends Component{
     this.state = {
       time: 0
     }
+
+    this.timer;
   }
 
   componentWillMount () {
@@ -17,13 +19,16 @@ class Timer extends Component{
 
   componentDidMount () {
 
-    setInterval(() => {
+    this.time = setInterval(() => {
       this.setState({
         time: this.state.time + 1
       })
     }, 1000)
+  }
 
-    console.log('Morreu')
+
+  componentWillMount(){
+    clearInterval(this.timer)
   }
 
   render () {
