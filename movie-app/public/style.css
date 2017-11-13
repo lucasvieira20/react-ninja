@@ -1,0 +1,217 @@
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+#header{
+    padding: 10px;
+    background:#673ab7;
+}
+
+#header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#header .head-top .logo{
+    font-size: 13px;
+    color:#fff;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+#header .head-top .logo .ico{
+    margin-right: 10px;
+    width: 22px;
+    height: 25px;
+    display: inline-block;
+    background: url(images/play-button.png) no-repeat;
+}
+
+#header .search-bar {
+    display: flex;
+}
+
+
+#header .search-bar .input{
+    background:#532d96;
+    padding:10px;
+    border:none;
+}
+
+#header .search-bar .submit{
+    font-family: "Open Sans",sans-serif;
+    background: #572ea3;
+    border:none;
+    color:#fff;
+    padding: 10px;
+}
+
+#header .search-bar ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:#fff;
+    font-family: 'Open Sans';
+}
+#header .search-bar ::-moz-placeholder { /* Firefox 19+ */
+    color:#fff;
+    font-family: 'Open Sans';
+}
+#header .search-bar :-ms-input-placeholder { /* IE 10+ */
+    color:#fff;
+    font-family: 'Open Sans';
+}
+#header .search-bar :-moz-placeholder { /* Firefox 18- */
+    color:#fff;
+    font-family: 'Open Sans';
+}
+
+/* Main */
+
+#main .wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#main #sidebar{
+    width: 23%;
+}
+
+#main #sidebar .box-filter{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main #sidebar .box-filter .title-sidebar{
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #673ab7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color:#673ab7;
+}
+#sidebar ul{
+    padding-left:0px;
+}
+
+#sidebar ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#sidebar ul li label{
+    float:right;
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* Card */
+
+#content-app{
+    width: 72%;
+}
+
+.list-movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list-movie .card{
+    width: 48%;
+    background: #fff;
+    border:1px solid #ccc;
+    box-shadow: 1px 1px 10px #ccc;
+    margin-bottom:30px;
+    height: 100%;
+    max-height: 278px;
+    display: flex;
+}
+
+.list-movie .card .movie-name{
+    font-size:14px;
+    text-transform: uppercase;
+    margin-bottom:10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.list-movie .card .movie-info{
+    height: 278px;
+    overflow: hidden;
+    /* padding-left: 10px; */
+    /* padding-right: 5px; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.list-movie .meta{
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 5px;
+    align-items: center;
+
+}
+.list-movie .meta .meta-year{
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.list-movie .meta .tag-movie{
+    font-size: 10px;
+    font-style: italic;
+}
+
+.list-movie .card .movie-overview{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.list-movie .card .movie-overview p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.list-movie .card .view-more{
+    background:#532d96;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+
+/* Footer */
+
+#footer{
+    padding:5px;
+    background:#673ab7;
+}
+
+#footer .copy{
+    text-align: center;
+    color:#fff;
+    font-size:12px;
+}
+
+#footer a{
+    color:orange;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <title>React App</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header id="header">
+        <div class="wrapper">
+            <div class="head-top">
+                <h1 class="logo"><span class="ico"></span>MovieApp</h1>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="input" placeholder="Search a Movie" />
+                <input type="submit" class="btn submit" value="Search" />
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="wrapper">
+            <aside id="sidebar">
+                <div class="box-filter">
+                    <h2 class="title-sidebar">Filtrar por Categoria</h2>
+                    <form>
+                        <ul>
+                            <li>
+                                <label for="category-1">Aventura</label>
+                                <input type="checkbox" name="" id="category-1" />
+                            </li>
+                            <li>
+                                <label for="category-2">Comédia</label>
+                                <input type="checkbox" name="" id="category-2"/>
+                            </li>
+                            <li>
+                                <label for="category-3">Ação</label>
+                                <input type="checkbox" name="" id="category-3"/>
+                            </li>
+                            <li>
+                                <label for="category-4">Terror</label>
+                                <input type="checkbox" name="" id="category-4"/>
+                            </li>
+                            <li>
+                                <label for="category-5">Documentário</label>
+                                <input type="checkbox" name="" id="category-5"/>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </aside>
+
+            <div id="content-app">
+                <div class="list-movie">
+
+                    <div class="card movie">
+                        <div class="image-movie">
+                            <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/jAXZMCG9rEXHUvfxTwEYEmO1V4p.jpg" alt="" srcset="">
+                        </div>
+                        <div class="movie-info">
+                            <h2 class="movie-name">Filme Name</h2>
+
+                           <div class="meta">
+                                <span class="meta-year">2016</span>
+                                <span class="tag-movie">Ação</span>
+                            </div>       
+                            <div class="movie-overview">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore animi quia, nihil corporis quasi dignissimos veniam debitis eveniet? Deleniti libero rem fugiat veritatis doloremque, veniam exercitationem. Sed, doloremque harum!</p>
+                            </div>
+                            <a href="#" class="btn view-more">Ver Mais Informações</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card movie">
+                        <div class="image-movie">
+                            <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/jAXZMCG9rEXHUvfxTwEYEmO1V4p.jpg" alt="" srcset="">
+                        </div>
+                        <div class="movie-info">
+                            <h2 class="movie-name">Filme Name</h2>
+                                
+                            <div class="meta">
+                                <span class="meta-year">2016</span>
+                                <span class="tag-movie">Ação</span>
+                            </div>       
+                            <div class="movie-overview">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore animi quia, nihil corporis quasi dignissimos veniam debitis eveniet? Deleniti libero rem fugiat veritatis doloremque, veniam exercitationem. Sed, doloremque harum!</p>
+                            </div>
+                            <a href="#" class="btn view-more">Ver Mais Informações</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card movie">
+                        <div class="image-movie">
+                            <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/jAXZMCG9rEXHUvfxTwEYEmO1V4p.jpg" alt="" srcset="">
+                        </div>
+                        <div class="movie-info">
+                            <h2 class="movie-name">Filme Name</h2>
+                                
+                            <div class="meta">
+                                <span class="meta-year">2016</span>
+                                <span class="tag-movie">Ação</span>
+                            </div>       
+                            <div class="movie-overview">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore animi quia, nihil corporis quasi dignissimos veniam debitis eveniet? Deleniti libero rem fugiat veritatis doloremque, veniam exercitationem. Sed, doloremque harum!</p>
+                            </div>
+                            <a href="#" class="btn view-more">Ver Mais Informações</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="wrapper">
+            <p class="copy">React Ninja - API by <a href="#">themoviedb.org</a></p>
+        </div>
+    </footer>
+
+  </body>
+</html>

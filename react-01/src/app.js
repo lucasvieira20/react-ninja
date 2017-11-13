@@ -5,12 +5,12 @@ import Timer from './timer'
 
 //Render Component like a Class
 class App extends Component{
-  constructor(){
-    super()
-    this.state = {
-      showTimer : true
+    constructor(){
+        super()
+        this.state = {
+            showTimer : true
+        }
     }
-  }
 
   render () {
     return(
