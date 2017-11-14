@@ -205,6 +205,7 @@ body{
 .list-movie .card .movie-info{
   height: 278px;
   overflow: hidden;
+  border-left: 1px solid #ececec;
   /* padding-left: 10px; */
   /* padding-right: 5px; */
   display: flex;

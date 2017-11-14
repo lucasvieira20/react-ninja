@@ -4,28 +4,39 @@ const filterCategory = [
     {
         htmlFor:"Category-1",
         id: "Category-1",
-        name: "Aventura"
+        name: "Adventure",
+        checked: false,
     },
     {
         htmlFor:"Category-2",
         id: "Category-2",
-        name: "Comédia"
+        name: "Comedy",
+        checked: false
     },
     {
         htmlFor:"Category-3",
         id: "Category-3",
-        name: "Ação"
+        name: "Action",
+        checked: false
     },
     {
         htmlFor:"Category-4",
         id: "Category-4",
-        name: "Terror"
+        name: "Horror",
+        checked: false
     },
     {
         htmlFor:"Category-5",
         id: "Category-5",
-        name: "Ficção"
+        name: "Fiction",
+        checked: true
     },
+    {
+        htmlFor:"Category-6",
+        id: "Category-6",
+        name: "Animation",
+        checked: false
+    }
 ];
 
 const Sidebar = ( {sidebar }) => (
@@ -35,9 +46,9 @@ const Sidebar = ( {sidebar }) => (
             <form>
                 <ul>
                     {filterCategory.map((category, index) => (
-                        <li>
+                        <li key="index">
                             <label htmlFor={category.htmlFor}>{category.name}</label>
-                            <input type="checkbox" name="{category.name}" id={category.id} />
+                            <input type="checkbox" name={category.name} id={category.id} checked={category.checked} />
                         </li>
                     ))}
                 </ul>
