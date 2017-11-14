@@ -48,7 +48,12 @@ const Sidebar = ( {sidebar }) => (
                     {filterCategory.map((category, index) => (
                         <li key={category.name}>
                             <label htmlFor={category.htmlFor}>{category.name}</label>
-                            <input type="checkbox" name={category.name} id={category.id} checked={category.checked} />
+                            <input 
+                                type="checkbox"
+                                name="category"
+                                id={category.id}
+                                value={category.name}
+                                checked={category.checked} />
                         </li>
                     ))}
                 </ul>

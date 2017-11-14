@@ -66,6 +66,11 @@ class App extends Component {
     // axios.get("https://api.themoviedb.org/3/discover/movie?api_key=e88c106abf5aa648d36c6c6463704181");
   }
 
+
+  filterMovies(){
+    console.log('Filter Movies');
+  }
+
   componentDidMount(){
     this.getMovie();
   }
