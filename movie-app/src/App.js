@@ -13,7 +13,7 @@ class App extends Component {
       movie:[
         {
           movieImage: "https://image.tmdb.org/t/p/w185_and_h278_bestv2/jAXZMCG9rEXHUvfxTwEYEmO1V4p.jpg",
-          movieName: 'Ex Nome do Filme', 
+          movieName: 'Capitão América - Guerra Cívil', 
           movieYear: '2016',
           movieGenre: "Ação",
           movieOverviewText : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore animi quia, nihil corporis quasi dignissimos veniam debitis eveniet? Deleniti libero rem fugiat veritatis doloremque, veniam exercitationem. Sed, doloremque harum!",
@@ -26,15 +26,22 @@ class App extends Component {
           movieOverviewText : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore animi quia, nihil corporis quasi dignissimos veniam debitis eveniet? Deleniti libero rem fugiat veritatis doloremque, veniam exercitationem. Sed, doloremque harum!",
         },
         {
+          movieImage: "https://image.tmdb.org/t/p/w185_and_h278_bestv2/fsYg2p0l4xMdSy3TKMcnmh00Vz4.jpg",
+          movieName: 'A Série Divergente: Convergente',
+          movieYear: '2016',
+          movieGenre: "Ficção",
+          movieOverviewText : "Tris (Shailene Woodley), Quatro (Theo James) e seus amigos estão prestes a pular a cerca que divide o mundo no qual até hoje viveram e um novo mundo até então por eles desconhecido, após terem descoberto que a distópica.",
+        },
+        {
           movieImage: "https://image.tmdb.org/t/p/w185_and_h278_bestv2/jAXZMCG9rEXHUvfxTwEYEmO1V4p.jpg",
-          movieName: 'Nome do Filme',
-          movieYear: '2017',
-          movieGenre: "Aventure",
+          movieName: 'Capitão América - Guerra Cívil', 
+          movieYear: '2016',
+          movieGenre: "Ação",
           movieOverviewText : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore animi quia, nihil corporis quasi dignissimos veniam debitis eveniet? Deleniti libero rem fugiat veritatis doloremque, veniam exercitationem. Sed, doloremque harum!",
         },
         {
           movieImage: "https://image.tmdb.org/t/p/w185_and_h278_bestv2/ujQthWB6c0ojlARk28NSTmqidbF.jpg",
-          movieName: 'Nome do Filme',
+          movieName: 'Mulher Maravilha',
           movieYear: '2016',
           movieGenre: "Ação",
           movieOverviewText : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore animi quia, nihil corporis quasi dignissimos veniam debitis eveniet? Deleniti libero rem fugiat veritatis doloremque, veniam exercitationem. Sed, doloremque harum!",
