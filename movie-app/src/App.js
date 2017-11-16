@@ -62,11 +62,11 @@ class App extends Component {
   }
 
   getFilteredMovies(category,state){
-    console.log('run');
   }
 
   render() {
-    this.getFilteredMovies(['ficction','adventure'],this.state.movie);
+    
+    console.log(this.getFilteredMovies());
     return (
       <AppContent 
         movie={this.state.movie}
