@@ -39,17 +39,12 @@ const filterCategory = [
     }
 ];
 
-const filterMovies = () => {    
-    console.log('oi');
-
-}
-
 const Sidebar = ({ sidebar }) => (
     
     <aside id="sidebar">
         <div className="box-filter">
             <h2 className="title-sidebar">{sidebar.titleSidebar}</h2>
-            <form onChange={filterMovies}>
+            <form>
                 <ul>
                     {filterCategory.map((category, index) => (
                         <li key={category.name}>
@@ -59,6 +54,7 @@ const Sidebar = ({ sidebar }) => (
                                 name="category"
                                 id={category.id}
                                 value={category.name}
+                                onChange={() => {}} 
                                 checked={category.checked} />
                         </li>
                     ))}

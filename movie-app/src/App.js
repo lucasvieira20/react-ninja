@@ -22,14 +22,14 @@ class App extends Component {
           movieImage: "https://image.tmdb.org/t/p/w185_and_h278_bestv2/9ORTc9UUTtRq7pssuu5OXNG3W5m.jpg",
           movieName: 'Superman',
           movieYear: '2017',
-          movieGenre: "Adventure",
+          movieGenre: "Action",
           movieOverviewText : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore animi quia, nihil corporis quasi dignissimos veniam debitis eveniet? Deleniti libero rem fugiat veritatis doloremque, veniam exercitationem. Sed, doloremque harum!",
         },
         {
           movieImage: "https://image.tmdb.org/t/p/w185_and_h278_bestv2/fsYg2p0l4xMdSy3TKMcnmh00Vz4.jpg",
           movieName: 'A Série Divergente: Convergente',
           movieYear: '2016',
-          movieGenre: "Action",
+          movieGenre: "Ficction",
           movieOverviewText : "Tris (Shailene Woodley), Quatro (Theo James) e seus amigos estão prestes a pular a cerca que divide o mundo no qual até hoje viveram e um novo mundo até então por eles desconhecido, após terem descoberto que a distópica.",
         },
         {
@@ -56,17 +56,34 @@ class App extends Component {
       ], 
 
       sidebar:{
-        titleSidebar: "Filtrar por Título"
+        titleSidebar: "Filtrar por Categoria"
       }
     }
   }
 
-  getFilteredMovies(category,state){
+  getFilteredMovies(category, movies){
+
+    var result = [];
+
+    for(let i = 0; i < movies.length; i++) {
+      for(var j = 0; j < category.length; j++) {
+        let item = category[j],
+          movieExist = movies[movies[i].movieGenre.indexOf(item)];
+
+        if(movieExist != undefined) {
+          result.push(movieExist);
+        }
+      }
+    }
+
+    console.log(result);
+    return movies;
+
   }
 
   render() {
     
-    console.log(this.getFilteredMovies());
+    console.log(this.getFilteredMovies(['Action','Animation'], this.state.movie));
     return (
       <AppContent 
         movie={this.state.movie}
