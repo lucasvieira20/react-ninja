@@ -8,7 +8,7 @@ const Movie = ({ movie }) => (
         <div className="movie-info">
             <h2 className="movie-name">{movie.movieName}</h2>
 
-        <div className="meta">
+            <div className="meta">
                 <span className="meta-year">{movie.movieYear}</span>
                 <span className="tag-movie">{movie.movieGenre}</span>
             </div>       

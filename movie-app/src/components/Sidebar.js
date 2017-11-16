@@ -39,11 +39,17 @@ const filterCategory = [
     }
 ];
 
-const Sidebar = ( {sidebar }) => (
+const filterMovies = () => {    
+    console.log('oi');
+
+}
+
+const Sidebar = ({ sidebar }) => (
+    
     <aside id="sidebar">
         <div className="box-filter">
             <h2 className="title-sidebar">{sidebar.titleSidebar}</h2>
-            <form>
+            <form onChange={filterMovies}>
                 <ul>
                     {filterCategory.map((category, index) => (
                         <li key={category.name}>

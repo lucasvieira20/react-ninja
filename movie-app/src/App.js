@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import AppContent from './components/AppContent';
 
 import './App.css';
@@ -61,29 +61,16 @@ class App extends Component {
     }
   }
 
-  getMovie(){
-    console.log('oi');
-    // axios.get("https://api.themoviedb.org/3/discover/movie?api_key=e88c106abf5aa648d36c6c6463704181");
-  }
-
-
-  filterMovies(){
-    console.log('Filter Movies');
-  }
-
-  componentDidMount(){
-    this.getMovie();
-  }
-
-  componentWillMount(){
-    console.log('will');
+  getFilteredMovies(category,state){
+    console.log('run');
   }
 
   render() {
+    this.getFilteredMovies(['ficction','adventure'],this.state.movie);
     return (
       <AppContent 
         movie={this.state.movie}
-        sidebar={this.state.sidebar} 
+        sidebar={this.state.sidebar}
       />
     );
   }
