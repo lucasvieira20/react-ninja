@@ -71,9 +71,9 @@ class App extends Component {
         let item = category[j],
             movieExist = movies[movies[i].movieGenre.indexOf(item)];
 
-        if(movieExist) {
-          result.push(movieExist);
-           break;
+        if(item === movies[i].movieGenre){
+          result.push(movies[i]);
+          break;
         }
       }
     }
