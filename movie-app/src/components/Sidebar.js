@@ -10,13 +10,13 @@ const Sidebar = ({ sidebar, toggleFilter }) => (
                 <ul>
                     {sidebar.filterCategory.map((category, index) => (
                         <li key={category.name}>
-                            <label htmlFor={category.htmlFor}>{category.name}</label>
+                            <label htmlFor={category.id}>{category.name}</label>
                             <input 
                                 type="checkbox"
                                 name="category"
                                 id={category.id}
                                 value={category.name}
-                                onChange={toggleFilter(index)} 
+                                onChange={toggleFilter(category.id)} 
                                 checked={category.checked} />
                         </li>
                     ))}

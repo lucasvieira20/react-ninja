@@ -104,9 +104,9 @@ class App extends Component {
     return movies.filter((movie) => category.indexOf(movie.movieGenre) > -1);
   }
 
-  toggleFilter(index){
-    return function foo(e){
-      console.log(e.target);
+  toggleFilter(id){
+    return (e) => {
+      console.log(id);
     }
   }
 
