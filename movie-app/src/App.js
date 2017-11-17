@@ -62,22 +62,7 @@ class App extends Component {
   }
 
   getFilteredMovies(category, movies){
-
-    var result = [];
-
-    for(let i = 0; i < movies.length; i++) {
-      for(var j = 0; j < category.length; j++) {
-
-        let item = category[j];
-        if(item === movies[i].movieGenre){
-          result.push(movies[i]);
-          break;
-        }
-      }
-    }
-
-    return result;
-
+    return movies.filter((movie) => category.indexOf(movie.movieGenre) > -1);
   }
 
   render() {
