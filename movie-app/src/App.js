@@ -56,10 +56,49 @@ class App extends Component {
       ], 
 
       sidebar:{
-        titleSidebar: "Filtrar por Categoria"
+        titleSidebar: "Filtrar por Categoria",
+        filterCategory: [
+          {
+              htmlFor:"Category-1",
+              id: "Category-1",
+              name: "Adventure",
+              checked: false,
+          },
+          {
+              htmlFor:"Category-2",
+              id: "Category-2",
+              name: "Comedy",
+              checked: false
+          },
+          {
+              htmlFor:"Category-3",
+              id: "Category-3",
+              name: "Action",
+              checked: false
+          },
+          {
+              htmlFor:"Category-4",
+              id: "Category-4",
+              name: "Horror",
+              checked: false
+          },
+          {
+              htmlFor:"Category-5",
+              id: "Category-5",
+              name: "Fiction",
+              checked: true
+          },
+          {
+              htmlFor:"Category-6",
+              id: "Category-6",
+              name: "Animation",
+              checked: false
+          }
+      ]
       }
     }
   }
+  
 
   getFilteredMovies(category, movies){
     return movies.filter((movie) => category.indexOf(movie.movieGenre) > -1);
