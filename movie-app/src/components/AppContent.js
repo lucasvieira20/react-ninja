@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 import ContentMovies from './ContentMovies';
 import Footer from './Footer';
 
-const AppContent = ({ movie, sidebar }) => (
+const AppContent = ({ movie, sidebar, toggleFilter }) => (
 
     <div id="app">
 
@@ -13,7 +13,7 @@ const AppContent = ({ movie, sidebar }) => (
 
         <main id="main">
             <div className="wrapper">
-                <Sidebar sidebar={sidebar} />
+                <Sidebar sidebar={sidebar} toggleFilter={toggleFilter} />
                 <ContentMovies movie={movie} />
             </div>
         </main>

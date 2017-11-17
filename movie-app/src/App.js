@@ -98,10 +98,16 @@ class App extends Component {
       }
     }
   }
-  
+
 
   getFilteredMovies(category, movies){
     return movies.filter((movie) => category.indexOf(movie.movieGenre) > -1);
+  }
+
+  toggleFilter(index){
+    return function foo(e){
+      console.log(e.target);
+    }
   }
 
   render() {
@@ -111,6 +117,7 @@ class App extends Component {
       <AppContent 
         movie={this.state.movie}
         sidebar={this.state.sidebar}
+        toggleFilter={this.toggleFilter}
       />
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Sidebar = ({ sidebar }) => (
+const Sidebar = ({ sidebar, toggleFilter }) => (
     
     <aside id="sidebar">
         <div className="box-filter">
@@ -16,7 +16,7 @@ const Sidebar = ({ sidebar }) => (
                                 name="category"
                                 id={category.id}
                                 value={category.name}
-                                onChange={() => {}} 
+                                onChange={toggleFilter(index)} 
                                 checked={category.checked} />
                         </li>
                     ))}
