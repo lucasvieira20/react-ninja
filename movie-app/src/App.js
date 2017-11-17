@@ -69,7 +69,6 @@ class App extends Component {
       for(var j = 0; j < category.length; j++) {
 
         let item = category[j];
-
         if(item === movies[i].movieGenre){
           result.push(movies[i]);
           break;
