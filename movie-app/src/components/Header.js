@@ -15,8 +15,8 @@ const Header = () => (
             </div>
         </header>
         <div className="top-filter">
-            <a href="#" className="filterLink film">Filmes</a>
-            <a href="#" className="filterLink series">Series</a>
+            <a href="" className="filterLink film">Filmes</a>
+            <a href="" className="filterLink series">Series</a>
         </div>
     </div>
 )

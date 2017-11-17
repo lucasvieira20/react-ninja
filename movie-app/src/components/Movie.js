@@ -15,7 +15,7 @@ const Movie = ({ movie }) => (
             <div className="movie-overview">
                 <p>{movie.movieOverviewText}</p>
             </div>
-            <a href="#" className="btn view-more">Ver Mais Informações</a>
+            <a href="" className="btn view-more">Ver Mais Informações</a>
         </div>
     </div>
 )
