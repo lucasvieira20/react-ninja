@@ -78,8 +78,7 @@ class App extends Component {
       }
     }
 
-    console.log(result);
-    return movies;
+    return result;
 
   }
 
