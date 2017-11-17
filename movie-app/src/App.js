@@ -68,8 +68,7 @@ class App extends Component {
     for(let i = 0; i < movies.length; i++) {
       for(var j = 0; j < category.length; j++) {
 
-        let item = category[j],
-            movieExist = movies[movies[i].movieGenre.indexOf(item)];
+        let item = category[j];
 
         if(item === movies[i].movieGenre){
           result.push(movies[i]);
