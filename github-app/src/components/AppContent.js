@@ -28,5 +28,4 @@ const AppContent = ({ userinfo, repos, handleSearch, getRepos }) => (
     </div>
 )
 
-
 export default AppContent;

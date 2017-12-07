@@ -111,8 +111,6 @@ class App extends Component {
   }
 
   render() {
-    
-    console.log(this.getFilteredMovies(['Action','Animation'], this.state.movie));
     return (
       <AppContent 
         movie={this.state.movie}
